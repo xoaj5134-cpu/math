@@ -104,7 +104,7 @@ with col2:
             # Display assistant response
             with st.chat_message("assistant"):
                 stream = client.chat.completions.create(
-                    model="solar-pro-2", # Correct model name based on solar pro2.md
+                    model="solar-pro2", # Correct model name based on solar pro2.md
                     messages=[
                         {"role": m["role"], "content": m["content"]}
                         for m in st.session_state.messages
